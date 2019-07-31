@@ -1,3 +1,2 @@
-# Grid
-
-A description of this package.
+### Grid
+SwiftUI Grid view layout with auto-sizing items and flexible column count.
