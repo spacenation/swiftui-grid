@@ -2,6 +2,10 @@
 
 SwiftUI Grid view layout with auto-sizing items and flexible column count.
 
+<center>
+<img src="Resources/preview.png"/>
+</center>
+
 ## Examples
 
 ```swift
