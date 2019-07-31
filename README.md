@@ -30,3 +30,12 @@ Grid(self.planets, minimumItemWidth: 320, spacing: 16) {
 }
 .edgesIgnoringSafeArea(.all)
 ```
+
+## Roadmap
+- ZStack based grid instead of 'VStack of HStacks'
+- Support for watchOS
+- Items selection and rearranging
+- UITests
+- 'CSS Grid'-like features
+
+## Contibutions
