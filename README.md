@@ -10,15 +10,17 @@ SwiftUI Grid view layout with auto-sizing items and flexible column count.
 
 ## Examples
 
-### Simple grid
 ```swift
+/// Simple grid
+
 Grid(0...100) {
     Text("\($0)")
 }
 ```
 
-### Grid with minimum item width and fixed item height.
 ```swift
+/// Grid with minimum item width and fixed item height.
+
 Grid(self.planets, minimumItemWidth: 320, spacing: 16) {
     PlanetView(planet: $0)
         .frame(height: 400)
