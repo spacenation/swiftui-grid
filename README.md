@@ -39,3 +39,4 @@ Grid(self.planets, minimumItemWidth: 320, spacing: 16) {
 - 'CSS Grid'-like features
 
 ## Contibutions
+Feel free to contribute via fork/pull request to master branch. If you want to request a feature or report a bug please start a new issue.
