@@ -8,6 +8,8 @@ SwiftUI Grid view layout with auto-sizing items and flexible column count.
 
 ## Examples
 
+Open `/Examples/GridExamples.xcodeproj` for more examples for both iOS and macOS
+
 ```swift
 /// Simple grid.
 
