@@ -3,16 +3,20 @@
 SwiftUI Grid view layout with auto-sizing items and flexible column count.
 
 <center>
-<img src="Resources/preview.png"/>
+<img src="Resources/iPad1.png"/>
 </center>
 
 ## Examples
 
+Open `/Examples/GridExamples.xcodeproj` for more examples for both iOS and macOS
+
 ```swift
 /// Simple grid.
 
-Grid(0...100) {
-    Text("\($0)")
+Grid(0...100, minimumItemWidth: 100) { _ in
+    Rectangle()
+        .foregroundColor(.red)
+        .frame(height: 100)
 }
 ```
 
@@ -26,8 +30,13 @@ Grid(self.planets, minimumItemWidth: 320, spacing: 16) {
             print("Selection:", $0)
         }
 }
-.edgesIgnoringSafeArea(.all)
 ```
+
+## Performance
+
+<center>
+<img src="Resources/iPad2.png"/>
+</center>
 
 ## Requirements
 
