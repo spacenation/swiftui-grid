@@ -17,6 +17,8 @@ public struct Grid<Data, Content> : View where Data: RandomAccessCollection, Con
                             ForEach(0..<self.columnCount(with: geometry), id: \.self) { (columnIndex: Int) -> Content? in
                                 self.item(with: geometry, rowIndex: rowIndex, columnIndex: columnIndex)
                             }
+                            .frame(maxWidth: .infinity)
+                            
                             ForEach(0..<self.emptyElementsCount(geometry: geometry, row: rowIndex), id: \.self) { _ in
                                 Spacer()
                             }
