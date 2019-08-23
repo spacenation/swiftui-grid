@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA6ED893231090FF00651DD9 /* BuilderLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */; };
+		FA6ED894231090FF00651DD9 /* BuilderLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */; };
 		FA902115230B32EA00BF9341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902114230B32EA00BF9341 /* AppDelegate.swift */; };
 		FA902117230B32EA00BF9341 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902116230B32EA00BF9341 /* SceneDelegate.swift */; };
 		FA902119230B32EA00BF9341 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902118230B32EA00BF9341 /* ContentView.swift */; };
@@ -33,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderLayoutView.swift; sourceTree = "<group>"; };
 		FA902111230B32EA00BF9341 /* GridExamples iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GridExamples iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA902114230B32EA00BF9341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA902116230B32EA00BF9341 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +160,7 @@
 				FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */,
 				FA902166230B398200BF9341 /* OneColumnLayoutView.swift */,
 				FA90216C230B3EC100BF9341 /* PerformanceLayoutView.swift */,
+				FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */,
 				FA902160230B379D00BF9341 /* Color+Random.swift */,
 				FA902163230B389900BF9341 /* Card.swift */,
 			);
@@ -276,6 +280,7 @@
 				FA902115230B32EA00BF9341 /* AppDelegate.swift in Sources */,
 				FA90216D230B3EC100BF9341 /* PerformanceLayoutView.swift in Sources */,
 				FA902164230B389900BF9341 /* Card.swift in Sources */,
+				FA6ED893231090FF00651DD9 /* BuilderLayoutView.swift in Sources */,
 				FA902117230B32EA00BF9341 /* SceneDelegate.swift in Sources */,
 				FA902167230B398200BF9341 /* OneColumnLayoutView.swift in Sources */,
 				FA902119230B32EA00BF9341 /* ContentView.swift in Sources */,
@@ -290,6 +295,7 @@
 			files = (
 				FA902162230B379D00BF9341 /* Color+Random.swift in Sources */,
 				FA90214B230B341C00BF9341 /* ContentView.swift in Sources */,
+				FA6ED894231090FF00651DD9 /* BuilderLayoutView.swift in Sources */,
 				FA90216E230B3EC100BF9341 /* PerformanceLayoutView.swift in Sources */,
 				FA902165230B389900BF9341 /* Card.swift in Sources */,
 				FA902149230B341C00BF9341 /* AppDelegate.swift in Sources */,

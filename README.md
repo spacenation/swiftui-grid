@@ -21,6 +21,16 @@ Grid(0...100, minimumItemWidth: 100) { _ in
 ```
 
 ```swift
+Grid {
+    ForEach(0...10, id: \.self) { _ in
+        Rectangle()
+            .foregroundColor(.random)
+            .frame(height: 20)
+    }
+}
+```
+
+```swift
 /// Grid with minimum item width and fixed item height.
 
 Grid(self.planets, minimumItemWidth: 320, spacing: 16) {
