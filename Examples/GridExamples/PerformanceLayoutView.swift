@@ -3,7 +3,7 @@ import Grid
 
 struct PerformanceLayoutView: View {
     var body: some View {
-        Grid(0...100, minimumItemWidth: 20, spacing: 1) { number in
+        Grid(0...5000, minimumItemWidth: 20, spacing: 1) { number in
             Rectangle()
                 .foregroundColor(.random)
                 .frame(height: 20)
