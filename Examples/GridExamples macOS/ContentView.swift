@@ -21,6 +21,11 @@ struct ContentView: View {
                     Text("Performance")
                 }
                 .tag(2)
+            BuilderLayoutView()
+                .tabItem {
+                    Text("Builder")
+                }
+                .tag(2)
         }
         .frame(minWidth: 300, maxWidth: .infinity, maxHeight: .infinity)
         .padding()

@@ -29,6 +29,14 @@ struct ContentView: View {
                     }
                 }
                 .tag(2)
+            BuilderLayoutView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "rectangle.3.offgrid.fill")
+                        Text("Builder")
+                    }
+                }
+                .tag(3)
         }
         .accentColor(.purple)
     }
