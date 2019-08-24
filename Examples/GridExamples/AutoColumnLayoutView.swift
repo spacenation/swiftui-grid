@@ -3,9 +3,11 @@ import Grid
 
 struct AutoColumnLayoutView: View {
     var body: some View {
-        Grid(0...100, minimumItemWidth: 120) { number in
-            Card(title: "\(number)")
-                .frame(height: 100)
+        ScrollView {
+            Grid(0...100, minItemWidth: 120, itemHeight: 100) { number in
+                Card(title: "\(number)")
+            }
+            .padding()
         }
     }
 }

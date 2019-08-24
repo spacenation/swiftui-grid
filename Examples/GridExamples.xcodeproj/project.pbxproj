@@ -159,8 +159,8 @@
 		FA90215C230B354900BF9341 /* GridExamples */ = {
 			isa = PBXGroup;
 			children = (
-				FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */,
 				FA902166230B398200BF9341 /* OneColumnLayoutView.swift */,
+				FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */,
 				FA90216C230B3EC100BF9341 /* PerformanceLayoutView.swift */,
 				FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */,
 				FA902160230B379D00BF9341 /* Color+Random.swift */,
