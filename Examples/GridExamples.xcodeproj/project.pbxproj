@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderLayoutView.swift; sourceTree = "<group>"; };
+		FA6ED895231197C600651DD9 /* GridExamples iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GridExamples iOS.entitlements"; sourceTree = "<group>"; };
 		FA902111230B32EA00BF9341 /* GridExamples iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GridExamples iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA902114230B32EA00BF9341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA902116230B32EA00BF9341 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 				FA90211A230B32EC00BF9341 /* Assets.xcassets */,
 				FA90211F230B32EC00BF9341 /* LaunchScreen.storyboard */,
 				FA902122230B32EC00BF9341 /* Info.plist */,
+				FA6ED895231197C600651DD9 /* GridExamples iOS.entitlements */,
 				FA90211C230B32EC00BF9341 /* Preview Content */,
 			);
 			path = "GridExamples iOS";
@@ -371,9 +373,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "GridExamples iOS/GridExamples iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GridExamples iOS\"/Preview\\ Content";
 				DEVELOPMENT_TEAM = Z8L4G5WZR3;
 				ENABLE_PREVIEWS = YES;
@@ -405,6 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spacenation.grid.examples.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -445,9 +450,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "GridExamples iOS/GridExamples iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GridExamples iOS\"/Preview\\ Content";
 				DEVELOPMENT_TEAM = Z8L4G5WZR3;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -472,6 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spacenation.grid.examples.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
