@@ -69,12 +69,12 @@ Grid(0...100) { number in
 - iOS 13+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- watchOS 6+
 - Xcode 11.0+
 
 ## Roadmap
-- Support for watchOS
+- tvOS Support
 - Items selection and rearranging
-- UITests
 - 'CSS Grid'-like features
 
 ## Contibutions
