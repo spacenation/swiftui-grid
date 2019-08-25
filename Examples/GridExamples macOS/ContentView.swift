@@ -6,28 +6,38 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            OneColumnLayoutView()
+            AutoColumnsLayoutView()
+                .tabItem {
+                    Text("Auto Columns")
+                }
+                .tag(0)
+                .frame(minWidth: 300)
+            FixedColumnsLayoutView()
+                .tabItem {
+                    Text("Fixed Columns")
+                }
+                .tag(1)
+                .frame(minWidth: 300)
+            SingleColumnLayoutView()
                 .tabItem {
                     Text("One Column")
                 }
-                .tag(0)
-            AutoColumnLayoutView()
-                .tabItem {
-                    Text("Auto Column")
-                }
-                .tag(1)
+                .tag(2)
+                .frame(minWidth: 300)
             PerformanceLayoutView()
                 .tabItem {
                     Text("Performance")
                 }
-                .tag(2)
+                .tag(3)
+                .frame(minWidth: 300)
             BuilderLayoutView()
                 .tabItem {
                     Text("Builder")
                 }
-                .tag(2)
+                .tag(4)
+                .frame(minWidth: 300)
         }
-        .frame(minWidth: 300, maxWidth: .infinity, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, maxHeight: .infinity)
         .padding()
     }
 }

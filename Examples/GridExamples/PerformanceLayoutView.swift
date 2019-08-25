@@ -3,11 +3,15 @@ import Grid
 
 struct PerformanceLayoutView: View {
     var body: some View {
-        Grid(0...5000, minimumItemWidth: 20, spacing: 1) { number in
-            Rectangle()
-                .foregroundColor(.random)
-                .frame(height: 20)
+        Grid {
+            ForEach(0...5000, id: \.self) { _ in
+                Rectangle()
+                    .foregroundColor(.random)
+            }
         }
+        .gridStyle(
+            AutoColumnsGridStyle(minItemWidth: 16, itemHeight: 16, spacing: 0)
+        )
     }
 }
 

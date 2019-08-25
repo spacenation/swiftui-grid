@@ -5,22 +5,30 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection) {
-            OneColumnLayoutView()
+            AutoColumnsLayoutView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "square.grid.3x2.fill")
+                        Text("Auto Columns")
+                    }
+                }
+                .tag(0)
+            FixedColumnsLayoutView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "rectangle.split.3x3.fill")
+                        Text("Fixed Columns")
+                    }
+                }
+                .tag(1)
+            SingleColumnLayoutView()
                 .tabItem {
                     VStack {
                         Image(systemName: "rectangle.grid.1x2.fill")
                         Text("One Column")
                     }
                 }
-                .tag(0)
-            AutoColumnLayoutView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "square.grid.3x2.fill")
-                        Text("Auto Column")
-                    }
-                }
-                .tag(1)
+                .tag(2)
             PerformanceLayoutView()
                 .tabItem {
                     VStack {
@@ -28,7 +36,7 @@ struct ContentView: View {
                         Text("Performance")
                     }
                 }
-                .tag(2)
+                .tag(3)
             BuilderLayoutView()
                 .tabItem {
                     VStack {
@@ -36,7 +44,7 @@ struct ContentView: View {
                         Text("Builder")
                     }
                 }
-                .tag(3)
+                .tag(4)
         }
         .accentColor(.purple)
     }

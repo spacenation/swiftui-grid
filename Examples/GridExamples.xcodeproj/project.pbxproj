@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA61E94F2312FE6D006A5B6B /* SingleColumnLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61E94E2312FE6D006A5B6B /* SingleColumnLayoutView.swift */; };
+		FA61E9502312FE6D006A5B6B /* SingleColumnLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61E94E2312FE6D006A5B6B /* SingleColumnLayoutView.swift */; };
+		FA61E9522312FF0F006A5B6B /* FixedColumnsLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61E9512312FF0F006A5B6B /* FixedColumnsLayoutView.swift */; };
+		FA61E9532312FF0F006A5B6B /* FixedColumnsLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61E9512312FF0F006A5B6B /* FixedColumnsLayoutView.swift */; };
 		FA6ED893231090FF00651DD9 /* BuilderLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */; };
 		FA6ED894231090FF00651DD9 /* BuilderLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */; };
 		FA902115230B32EA00BF9341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902114230B32EA00BF9341 /* AppDelegate.swift */; };
@@ -26,15 +30,15 @@
 		FA902162230B379D00BF9341 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902160230B379D00BF9341 /* Color+Random.swift */; };
 		FA902164230B389900BF9341 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902163230B389900BF9341 /* Card.swift */; };
 		FA902165230B389900BF9341 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902163230B389900BF9341 /* Card.swift */; };
-		FA902167230B398200BF9341 /* OneColumnLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902166230B398200BF9341 /* OneColumnLayoutView.swift */; };
-		FA902168230B398200BF9341 /* OneColumnLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902166230B398200BF9341 /* OneColumnLayoutView.swift */; };
-		FA90216A230B39C800BF9341 /* AutoColumnLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */; };
-		FA90216B230B39C800BF9341 /* AutoColumnLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */; };
+		FA90216A230B39C800BF9341 /* AutoColumnsLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902169230B39C800BF9341 /* AutoColumnsLayoutView.swift */; };
+		FA90216B230B39C800BF9341 /* AutoColumnsLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902169230B39C800BF9341 /* AutoColumnsLayoutView.swift */; };
 		FA90216D230B3EC100BF9341 /* PerformanceLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90216C230B3EC100BF9341 /* PerformanceLayoutView.swift */; };
 		FA90216E230B3EC100BF9341 /* PerformanceLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90216C230B3EC100BF9341 /* PerformanceLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA61E94E2312FE6D006A5B6B /* SingleColumnLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleColumnLayoutView.swift; sourceTree = "<group>"; };
+		FA61E9512312FF0F006A5B6B /* FixedColumnsLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedColumnsLayoutView.swift; sourceTree = "<group>"; };
 		FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderLayoutView.swift; sourceTree = "<group>"; };
 		FA6ED895231197C600651DD9 /* GridExamples iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GridExamples iOS.entitlements"; sourceTree = "<group>"; };
 		FA902111230B32EA00BF9341 /* GridExamples iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GridExamples iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,8 +60,7 @@
 		FA902155230B341D00BF9341 /* GridExamples_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GridExamples_macOS.entitlements; sourceTree = "<group>"; };
 		FA902160230B379D00BF9341 /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
 		FA902163230B389900BF9341 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		FA902166230B398200BF9341 /* OneColumnLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneColumnLayoutView.swift; sourceTree = "<group>"; };
-		FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoColumnLayoutView.swift; sourceTree = "<group>"; };
+		FA902169230B39C800BF9341 /* AutoColumnsLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoColumnsLayoutView.swift; sourceTree = "<group>"; };
 		FA90216C230B3EC100BF9341 /* PerformanceLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceLayoutView.swift; sourceTree = "<group>"; };
 		FA90216F230B4AC300BF9341 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,8 +162,9 @@
 		FA90215C230B354900BF9341 /* GridExamples */ = {
 			isa = PBXGroup;
 			children = (
-				FA902169230B39C800BF9341 /* AutoColumnLayoutView.swift */,
-				FA902166230B398200BF9341 /* OneColumnLayoutView.swift */,
+				FA902169230B39C800BF9341 /* AutoColumnsLayoutView.swift */,
+				FA61E9512312FF0F006A5B6B /* FixedColumnsLayoutView.swift */,
+				FA61E94E2312FE6D006A5B6B /* SingleColumnLayoutView.swift */,
 				FA90216C230B3EC100BF9341 /* PerformanceLayoutView.swift */,
 				FA6ED892231090FF00651DD9 /* BuilderLayoutView.swift */,
 				FA902160230B379D00BF9341 /* Color+Random.swift */,
@@ -279,15 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA61E94F2312FE6D006A5B6B /* SingleColumnLayoutView.swift in Sources */,
 				FA902115230B32EA00BF9341 /* AppDelegate.swift in Sources */,
 				FA90216D230B3EC100BF9341 /* PerformanceLayoutView.swift in Sources */,
+				FA61E9522312FF0F006A5B6B /* FixedColumnsLayoutView.swift in Sources */,
 				FA902164230B389900BF9341 /* Card.swift in Sources */,
 				FA6ED893231090FF00651DD9 /* BuilderLayoutView.swift in Sources */,
 				FA902117230B32EA00BF9341 /* SceneDelegate.swift in Sources */,
-				FA902167230B398200BF9341 /* OneColumnLayoutView.swift in Sources */,
 				FA902119230B32EA00BF9341 /* ContentView.swift in Sources */,
 				FA902161230B379D00BF9341 /* Color+Random.swift in Sources */,
-				FA90216A230B39C800BF9341 /* AutoColumnLayoutView.swift in Sources */,
+				FA90216A230B39C800BF9341 /* AutoColumnsLayoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,14 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA61E9502312FE6D006A5B6B /* SingleColumnLayoutView.swift in Sources */,
 				FA902162230B379D00BF9341 /* Color+Random.swift in Sources */,
 				FA90214B230B341C00BF9341 /* ContentView.swift in Sources */,
 				FA6ED894231090FF00651DD9 /* BuilderLayoutView.swift in Sources */,
+				FA61E9532312FF0F006A5B6B /* FixedColumnsLayoutView.swift in Sources */,
 				FA90216E230B3EC100BF9341 /* PerformanceLayoutView.swift in Sources */,
 				FA902165230B389900BF9341 /* Card.swift in Sources */,
 				FA902149230B341C00BF9341 /* AppDelegate.swift in Sources */,
-				FA902168230B398200BF9341 /* OneColumnLayoutView.swift in Sources */,
-				FA90216B230B39C800BF9341 /* AutoColumnLayoutView.swift in Sources */,
+				FA90216B230B39C800BF9341 /* AutoColumnsLayoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,19 +1,19 @@
 import SwiftUI
 import Grid
 
-struct AutoColumnLayoutView: View {
+struct AutoColumnsLayoutView: View {
     var body: some View {
-        Grid(0...100, minimumItemWidth: 120) { number in
+        Grid(0...100) { number in
             Card(title: "\(number)")
-                .frame(height: 100)
         }
+        .padding()
     }
 }
 
 #if DEBUG
 struct AutoColumnsGridView_Previews: PreviewProvider {
     static var previews: some View {
-        AutoColumnLayoutView()
+        AutoColumnsLayoutView()
     }
 }
 #endif
