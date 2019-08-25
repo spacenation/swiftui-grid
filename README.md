@@ -6,40 +6,49 @@ SwiftUI Grid view layout with auto-sizing items and flexible column count.
 <img src="Resources/iPad1.png"/>
 </center>
 
-## Examples
+## GridStyles
 
 Open `/Examples/GridExamples.xcodeproj` for more examples for both iOS and macOS
 
-```swift
-/// Simple grid.
 
-Grid(0...100, minimumItemWidth: 100) { _ in
+### AutoColumnsGridStyle (Default)
+
+```swift
+Grid(0...100) { _ in
+    Rectangle()
+        .foregroundColor(.blue)
+}
+```
+
+```
+Grid(0...100) { _ in
     Rectangle()
         .foregroundColor(.red)
-        .frame(height: 100)
 }
+.gridStyle(
+    AutoColumnsGridStyle(minItemWidth: 160, itemHeight: 80, hSpacing: 8, vSpacing: 8)
+)
 ```
+### FixedColumnsGridStyle
 
 ```swift
-Grid {
-    ForEach(0...10, id: \.self) { _ in
-        Rectangle()
-            .foregroundColor(.random)
-            .frame(height: 20)
-    }
+
+Grid(0...100) { number in
+    Card(title: "\(number)")
 }
+.gridStyle(
+    FixedColumnsGridStyle(columns: 3, itemHeight: 160)
+)
 ```
+### SingleColumnGridStyle
 
 ```swift
-/// Grid with minimum item width and fixed item height.
-
-Grid(self.planets, minimumItemWidth: 320, spacing: 16) {
-    PlanetView(planet: $0)
-        .frame(height: 400)
-        .onTapGesture {
-            print("Selection:", $0)
-        }
+Grid(0...100) { number in
+    Card(title: "\(number)")
 }
+.gridStyle(
+    SingleColumnGridStyle(itemHeight: 160)
+)
 ```
 
 ## Performance

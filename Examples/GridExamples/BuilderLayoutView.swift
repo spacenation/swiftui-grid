@@ -28,7 +28,9 @@ struct BuilderLayoutView: View {
                     .cornerRadius(self.cornerRadius)
             }
             .padding(self.padding)
-            .gridStyle(DefaultGridStyle(minItemWidth: minItemWidth, itemHeight: itemHeight, hSpacing: hSpacing, vSpacing: vSpacing))
+            .gridStyle(
+                AutoColumnsGridStyle(minItemWidth: minItemWidth, itemHeight: itemHeight, hSpacing: hSpacing, vSpacing: vSpacing)
+            )
             
             VStack {
                 Slider(value: $itemsCount, in: itemsCountRange)

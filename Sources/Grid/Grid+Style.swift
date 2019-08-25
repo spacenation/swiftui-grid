@@ -35,7 +35,7 @@ extension View {
 }
 
 struct GridStyleKey: EnvironmentKey {
-    static let defaultValue: GridStyle = DefaultGridStyle()
+    static let defaultValue: GridStyle = AutoColumnsGridStyle()
 }
 
 extension EnvironmentValues {

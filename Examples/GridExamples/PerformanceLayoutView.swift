@@ -8,7 +8,7 @@ struct PerformanceLayoutView: View {
                 .foregroundColor(.random)
         }
         .gridStyle(
-            DefaultGridStyle(minItemWidth: 16, itemHeight: 16, spacing: 0)
+            AutoColumnsGridStyle(minItemWidth: 16, itemHeight: 16, spacing: 0)
         )
     }
 }
