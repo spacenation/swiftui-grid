@@ -6,6 +6,12 @@ SwiftUI Grid view layout with custom styles.
 <img src="Resources/iPad1.png"/>
 </center>
 
+## Advantages
+- ZStack based layout
+- Custom Styles (AutoColumns, FixedColumns, SingleColumn)
+- SwiftUI code patterns (StyleStructs, EnvironmentValues)
+- Active development for production apps
+
 ## GridStyles
 
 Open `/Examples/GridExamples.xcodeproj` for more examples for both iOS and macOS
