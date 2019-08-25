@@ -32,35 +32,6 @@ public struct FixedColumnsGridStyle: GridStyle {
     }
     
     public func position(at index: Int, with geometry: GeometryProxy, itemsCount: Int) -> CGPoint {
-        self.position(
-            at: index,
-            with: geometry,
-            columns: self.columns,
-            itemHeight: self.itemHeight,
-            padding: self.padding,
-            hSpacing: self.hSpacing,
-            vSpacing: self.vSpacing
-        )
-    }
-    
-    public func gridHeight(with geometry: GeometryProxy, itemsCount: Int) -> CGFloat {
-        self.gridHeight(
-            with: geometry,
-            itemsCount: itemsCount,
-            columns: self.columns,
-            itemHeight: self.itemHeight,
-            padding: self.padding,
-            hSpacing: self.hSpacing,
-            vSpacing: self.vSpacing
-        )
-    }
-    
-    @inlinable func availableWidth(with geometry: GeometryProxy, padding: EdgeInsets, hSpacing: CGFloat) -> CGFloat {
-        let horizontalPadding = padding.leading + padding.trailing
-        return geometry.size.width - horizontalPadding
-    }
-    
-    @inlinable func position(at index: Int, with geometry: GeometryProxy, columns: Int, itemHeight: CGFloat, padding: EdgeInsets, hSpacing: CGFloat, vSpacing: CGFloat) -> CGPoint {
         let row = index / max(1, columns)
         let itemIndexAtRow = index % max(1, columns)
         let itemWidth = self.itemWidth(for: geometry, columns: columns, padding: padding, hSpacing: hSpacing)
@@ -70,13 +41,7 @@ public struct FixedColumnsGridStyle: GridStyle {
         return CGPoint(x: x, y: y)
     }
     
-    @inlinable func itemWidth(for geometry: GeometryProxy, columns: Int, padding: EdgeInsets, hSpacing: CGFloat) -> CGFloat {
-        let availableWidth = self.availableWidth(with: geometry, padding: padding, hSpacing: hSpacing)
-        let usableWidth = availableWidth - (CGFloat(columns - 1) * hSpacing)
-        return usableWidth / CGFloat(columns)
-    }
-    
-    @inlinable func gridHeight(with geometry: GeometryProxy, itemsCount: Int, columns: Int, itemHeight: CGFloat, padding: EdgeInsets, hSpacing: CGFloat, vSpacing: CGFloat) -> CGFloat {
+    public func gridHeight(with geometry: GeometryProxy, itemsCount: Int) -> CGFloat {
         let rowCount = Int((CGFloat(itemsCount) / max(1.0, CGFloat(columns))).rounded(.up))
         let verticalPadding = padding.top + padding.bottom
         return CGFloat(rowCount) * itemHeight + verticalPadding + (CGFloat(rowCount - 1) * vSpacing)

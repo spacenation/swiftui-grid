@@ -7,7 +7,9 @@ struct PerformanceLayoutView: View {
             Rectangle()
                 .foregroundColor(.random)
         }
-        .gridStyle(DefaultGridStyle(minItemWidth: 16, itemHeight: 16, spacing: 0))
+        .gridStyle(
+            DefaultGridStyle(minItemWidth: 16, itemHeight: 16, spacing: 0)
+        )
     }
 }
 

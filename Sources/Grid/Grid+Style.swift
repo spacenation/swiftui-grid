@@ -11,6 +11,20 @@ public protocol GridStyle {
     func gridHeight(with geometry: GeometryProxy, itemsCount: Int) -> CGFloat
 }
 
+
+extension GridStyle {
+    @inlinable func availableWidth(with geometry: GeometryProxy, padding: EdgeInsets, hSpacing: CGFloat) -> CGFloat {
+        let horizontalPadding = padding.leading + padding.trailing
+        return geometry.size.width - horizontalPadding
+    }
+    
+    @inlinable func itemWidth(for geometry: GeometryProxy, columns: Int, padding: EdgeInsets, hSpacing: CGFloat) -> CGFloat {
+        let availableWidth = self.availableWidth(with: geometry, padding: padding, hSpacing: hSpacing)
+        let usableWidth = availableWidth - (CGFloat(columns - 1) * hSpacing)
+        return usableWidth / CGFloat(columns)
+    }
+}
+
 extension View {
 
     /// Sets the style for `Grid` within the environment of `self`.

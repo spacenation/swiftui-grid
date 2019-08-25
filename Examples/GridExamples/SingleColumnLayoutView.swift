@@ -3,14 +3,13 @@ import Grid
 
 struct SingleColumnLayoutView: View {
     var body: some View {
-        GeometryReader { geometry in
-            ///Grid(0...100, minItemWidth: geometry.size.width, itemHeight: 300) { number in
-            Grid(0...100) { number in
-                Card(title: "\(number)")
-            }
-            .padding()
-            .gridStyle(SingleColumnGridStyle(itemHeight: 160))
+        Grid(0...100) { number in
+            Card(title: "\(number)")
         }
+        .padding()
+        .gridStyle(
+            SingleColumnGridStyle(itemHeight: 160)
+        )
     }
 }
 

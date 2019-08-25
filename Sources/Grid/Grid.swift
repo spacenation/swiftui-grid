@@ -21,7 +21,10 @@ public struct Grid<Content> : View where Content : View {
                             .position(self.style.position(at: index, with: geometry, itemsCount: self.items.count))
                     }
                 }
-                .frame(height: self.style.gridHeight(with: geometry, itemsCount: self.items.count))
+                .frame(
+                    width: geometry.size.width,
+                    height: self.style.gridHeight(with: geometry, itemsCount: self.items.count)
+                )
             }
         }
     }

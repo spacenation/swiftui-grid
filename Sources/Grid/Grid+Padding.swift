@@ -20,7 +20,7 @@ extension Grid {
                 edgeInsets.leading = length
             }
             if edges.contains(.all) || edges.contains(.bottom) || edges.contains(.vertical) {
-                edgeInsets.trailing = length
+                edgeInsets.bottom = length
             }
             if edges.contains(.all) || edges.contains(.trailing) || edges.contains(.horizontal) {
                 edgeInsets.trailing = length
@@ -29,19 +29,3 @@ extension Grid {
         return self.environment(\.gridStyle.padding, edgeInsets)
     }
 }
-
-
-//struct GridPaddingKey: EnvironmentKey {
-//    static let defaultValue: EdgeInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
-//}
-
-//extension EnvironmentValues {
-//    var gridPadding: EdgeInsets {
-//        get {
-//            return self[GridPaddingKey.self]
-//        }
-//        set {
-//            self[GridPaddingKey.self] = newValue
-//        }
-//    }
-//}

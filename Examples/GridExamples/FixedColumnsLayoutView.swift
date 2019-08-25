@@ -7,7 +7,9 @@ struct FixedColumnsLayoutView: View {
             Card(title: "\(number)")
         }
         .padding()
-        .gridStyle(FixedColumnsGridStyle(columns: 5, itemHeight: 100))
+        .gridStyle(
+            FixedColumnsGridStyle(columns: 3, itemHeight: 80)
+        )
     }
 }
 
