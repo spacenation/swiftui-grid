@@ -8,7 +8,7 @@ struct SingleColumnLayoutView: View {
         }
         .padding()
         .gridStyle(
-            SingleColumnGridStyle(itemHeight: 160)
+            SingleColumnGridStyle(itemHeight: 80)
         )
     }
 }
