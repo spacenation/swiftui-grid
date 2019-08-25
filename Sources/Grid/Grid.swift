@@ -1,7 +1,6 @@
 import SwiftUI
 
 /// A view that arranges its children in a grid.
-@available(iOS 13.0, OSX 10.15, *)
 public struct Grid<Content> : View where Content : View {
     @Environment(\.gridStyle) var style
     
@@ -31,6 +30,7 @@ public struct Grid<Content> : View where Content : View {
 }
 
 #if DEBUG
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct Grid_Previews: PreviewProvider {
     static var previews: some View {
         Grid(0...100) {

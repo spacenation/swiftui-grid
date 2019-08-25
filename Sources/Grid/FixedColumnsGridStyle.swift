@@ -1,7 +1,6 @@
 import SwiftUI
 
 /// Fixed columns `Grid` style.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct FixedColumnsGridStyle: GridStyle {
     public var padding = EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
     

@@ -1,10 +1,3 @@
-//
-//  ExtensionDelegate.swift
-//  GridExamples watchOS WatchKit Extension
-//
-//  Created by Alex Young on 2019-08-25.
-//
-
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {

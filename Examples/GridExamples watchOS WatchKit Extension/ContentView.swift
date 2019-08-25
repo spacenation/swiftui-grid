@@ -1,15 +1,40 @@
-//
-//  ContentView.swift
-//  GridExamples watchOS WatchKit Extension
-//
-//  Created by Alex Young on 2019-08-25.
-//
-
 import SwiftUI
+import Grid
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        List {
+            NavigationLink(destination: AutoColumnsLayoutView()) {
+                HStack {
+                    Image(systemName: "square.grid.3x2.fill")
+                        .foregroundColor(.accentColor)
+                    Text("Auto Columns")
+                }
+                
+            }
+            NavigationLink(destination: FixedColumnsLayoutView()) {
+                HStack {
+                    Image(systemName: "rectangle.split.3x3.fill")
+                        .foregroundColor(.accentColor)
+                    Text("Fixed Columns")
+                }
+            }
+            NavigationLink(destination: SingleColumnLayoutView()) {
+                HStack {
+                    Image(systemName: "rectangle.grid.1x2.fill")
+                        .foregroundColor(.accentColor)
+                    Text("One Column")
+                }
+            }
+            NavigationLink(destination: PerformanceLayoutView()) {
+                HStack {
+                    Image(systemName: "square.grid.4x3.fill")
+                        .foregroundColor(.accentColor)
+                    Text("Performance")
+                }
+            }
+        }
+        .accentColor(.purple)
     }
 }
 

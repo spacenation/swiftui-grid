@@ -1,7 +1,6 @@
 import SwiftUI
 
 /// A specification for the appearance of a `Grid`.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public protocol GridStyle {
     var padding: EdgeInsets { get set }
     
