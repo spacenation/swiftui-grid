@@ -2,7 +2,7 @@ import SwiftUI
 import Grid
 
 struct ContentView: View {
-    @State private var selection = 0
+    @State private var selection = 1
     
     var body: some View {
         TabView(selection: $selection) {
@@ -11,23 +11,23 @@ struct ContentView: View {
                     Text("One Column")
                 }
                 .tag(0)
-            AutoColumnLayoutView()
-                .tabItem {
-                    Text("Auto Column")
-                }
-                .tag(1)
-            PerformanceLayoutView()
-                .tabItem {
-                    Text("Performance")
-                }
-                .tag(2)
-            BuilderLayoutView()
-                .tabItem {
-                    Text("Builder")
-                }
-                .tag(2)
+//            AutoColumnLayoutView()
+//                .tabItem {
+//                    Text("Auto Column")
+//                }
+//                .tag(1)
+//            PerformanceLayoutView()
+//                .tabItem {
+//                    Text("Performance")
+//                }
+//                .tag(2)
+//            BuilderLayoutView()
+//                .tabItem {
+//                    Text("Builder")
+//                }
+//                .tag(2)
         }
-        .frame(minWidth: 300, maxWidth: .infinity, maxHeight: .infinity)
+        //.frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()
     }
 }
