@@ -1,6 +1,6 @@
 ## SwiftUI Grid
 
-SwiftUI Grid view layout with auto-sizing items and flexible column count.
+SwiftUI Grid view layout with custom styles.
 
 <center>
 <img src="Resources/iPad1.png"/>
@@ -20,11 +20,14 @@ Grid(0...100) { _ in
 }
 ```
 
-```
-Grid(0...100) { _ in
-    Rectangle()
-        .foregroundColor(.red)
+```swift
+Grid {
+    ForEach(items, id: \.self) { item in
+        Rectangle()
+            .foregroundColor(item.color)
+    }
 }
+.padding(.horizontal, 8)
 .gridStyle(
     AutoColumnsGridStyle(minItemWidth: 160, itemHeight: 80, hSpacing: 8, vSpacing: 8)
 )
@@ -32,7 +35,6 @@ Grid(0...100) { _ in
 ### FixedColumnsGridStyle
 
 ```swift
-
 Grid(0...100) { number in
     Card(title: "\(number)")
 }
@@ -57,14 +59,13 @@ Grid(0...100) { number in
 <img src="Resources/iPad2.png"/>
 </center>
 
-## Requirements
-
-- Swift 5+
+## SDKs
 - iOS 13+
+- Mac Catalyst 13.0+
 - macOS 10.15+
+- Xcode 11.0+
 
 ## Roadmap
-- ZStack based grid instead of 'VStack of HStacks'
 - Support for watchOS
 - Items selection and rearranging
 - UITests
