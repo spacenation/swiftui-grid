@@ -15,7 +15,7 @@ SwiftUI Grid view layout with custom styles.
 
 ## GridStyles
 
-Open `/Examples/GridExamples.xcodeproj` for more examples for both iOS and macOS
+Open `/Examples/GridExamples.xcodeproj` for more examples for iOS, macOS, watchOS and tvOS
 
 
 ### AutoColumnsGridStyle (Default)
