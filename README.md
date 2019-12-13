@@ -2,6 +2,8 @@
 Collection of useful SwiftUI extensions and elements
 
 - Grid based layouts
+- Custom shapes
+- Data charts
 - Supports all apple platforms
 - SwiftUI code patterns (Styles, EnvironmentValues, ViewBuilder)
 - Active development for production apps
@@ -107,6 +109,70 @@ struct CardsView: View {
 }
 ```
 
+## Data Visualization
+
+Build custom charts with SwiftUI
+
+<center>
+<img src="Resources/DataVisualizations/customChart.png"/>
+</center>
+
+### Line Chart
+<center>
+<img src="Resources/DataVisualizations/lineChart.png"/>
+</center>
+
+```swift
+Chart(data: [0.1, 0.3, 0.2, 0.5, 0.4, 0.9, 0.1])
+    .chartStyle(
+        LineChartStyle(.quadCurve, lineColor: .blue, lineWidth: 5)
+    )
+```
+
+### Area Chart
+<center>
+<img src="Resources/DataVisualizations/areaChart.png"/>
+</center>
+
+```swift
+Chart(data: [0.1, 0.3, 0.2, 0.5, 0.4, 0.9, 0.1])
+    .chartStyle(
+        AreaChartStyle(.quadCurve, fill:
+            LinearGradient(gradient: .init(colors: [Color.blue.opacity(0.2), Color.blue.opacity(0.05)]), startPoint: .top, endPoint: .bottom)
+        )
+    )
+```
+
+### Stacked Area Chart
+
+```swift
+Chart(data: matrix)
+    .chartStyle(
+        StackedAreaChartStyle(.quadCurve, colors: [.yellow, .orange, .red])
+    )
+```
+
+### Column Chart
+<center>
+<img src="Resources/DataVisualizations/columnChart.png"/>
+</center>
+
+```swift
+Chart(data: [0.1, 0.3, 0.2, 0.5, 0.4, 0.9, 0.1])
+    .chartStyle(
+        ColumnChartStyle(column: Capsule().foregroundColor(.green), spacing: 2)
+    )
+```
+
+### Stacked Column Chart
+
+```swift
+Chart(data: matrix)
+    .chartStyle(
+        StackedColumnChartStyle(spacing: 2, colors: [.yellow, .orange, .red])
+    )
+```
+
 ## Shapes
 
 ### Regular Polygons
@@ -160,6 +226,7 @@ GridPattern(horizontalLines: 20, verticalLines: 40)
 - 'CSS Grid'-like features for Modular Grid
 - View Modifiers
 - Rounded regular polygons
+- Bar chart style
 
 ## Code Contibutions
 Feel free to contribute via fork/pull request to master branch. If you want to request a feature or report a bug please start a new issue.
