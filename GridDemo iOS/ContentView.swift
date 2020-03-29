@@ -19,6 +19,20 @@ struct ContentView: View {
                             Text("Staggered Grid")
                         }
                     }
+                    
+                    NavigationLink(destination: SectionedGridView()) {
+                        HStack {
+                            Image(systemName: "rectangle.grid.1x2.fill")
+                            Text("Sectioned Grid")
+                        }
+                    }
+                    
+                    NavigationLink(destination: StaticGridView()) {
+                        HStack {
+                            Image(systemName: "circle.grid.2x2.fill")
+                            Text("Static Grid")
+                        }
+                    }
                 }
             }
             .listStyle(
